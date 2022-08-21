@@ -1,0 +1,440 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    /* color variables */
+--primary-color: #ffe312;
+}
+
+/* Navigation Area */
+
+header{}
+nav{ }
+.navbar{
+    display: grid;
+    grid-template-columns: 1.5fr 4fr 1fr;
+    font-family: 'Bree Serif', serif;
+    /* background-color: rgb(92 92 92 / 20%); */
+    color: white;
+    height: 77px;  
+    align-items: center;
+}
+
+.navbar div{
+    /* border: 2px solid red; */
+}
+#nav-logo{
+    margin: 0px 0px 0px 45px;
+    font-size: 32px;
+}
+
+#nav-logo img{
+    margin: 0px 0px 0px 23px;
+    padding: 11px 0px 0px 0px;
+}
+    
+
+#nav-menu{
+}
+#nav-menu ul li{
+    display: inline-block;
+}
+#nav-menu ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 7px 33px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#nav-menu ul li a:hover{
+    background-color:var(--primary-color);
+}
+#nav-btn{
+    margin: 0px 0px 0px 12px;
+}
+
+#nav-btn a{
+    text-decoration: none;
+    color: white;
+}
+ 
+#home::before{
+    content: "";
+    background:url(/img/imuneeb_profile.jpg) center center/cover;
+    background-repeat: repeat-x;
+    /* background-size: cover; */
+    /* background-position: -270px 0px; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+
+/* Section Area */
+
+.title-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Bree Serif', serif;
+}
+
+#title{
+    margin: 23px 23px 78px 23px;
+    padding: 23px 45px 23px 44px;
+    color: white;
+}
+
+#title h1{
+    margin: 23px 0px 23px 0px;
+    font-size: 62px;
+    line-height: 1em;
+}
+
+#title h3{
+    margin: 23px 0px 23px 0px;
+    font-size: 31px;
+}
+
+#title p{
+    margin: 23px 0px 23px 0px;
+    line-height: 25px;
+}
+
+#title-area-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Intro Section Area */
+
+#intro-pic{
+    height: 430px;
+    width: 330px;
+    /* border: 2px solid black; */
+    border-radius: 15px;
+    box-shadow: 0px -23px rgb(153 153 153), -60px -40px rgb(238 238 238), 62px 24px rgb(238 238 238);
+    margin: 0px 0px 0px 200px;
+    background: url(/img/About-me-Pic-576x1024.png) no-repeat center center/cover;
+}
+
+.intro-area{
+    /* background: url(/map.png) no-repeat center center/cover ; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* margin:50px; */
+    padding: 40px;
+    font-family: 'Bree Serif', serif;
+    height: 700px;
+
+}
+
+.intro-area::before{
+    content: "";
+    background:url(/img/map.png) center center/cover;
+    /* background-repeat: repeat-x; */
+    /* background-size: cover; */
+    /* background-position: -270px 0px; */
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.45;
+}
+
+#intro-text{
+    padding: 0px 90px 0px 0px;
+}
+#intro-text-p1{
+    margin: 23px 0px 0px 0px;
+    font-weight: bold;
+    line-height: 28px;
+}
+#intro-text-p2{
+    margin: 23px 0px 0px 0px;
+}
+
+#intro-text-p3{
+    margin: 23px 0px 0px 0px;
+}
+
+
+/* Skills Section Area */
+.skills-container{
+    background-color: rgb(238, 238, 238);
+    padding: 140px;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+    gap: 17px;
+    text-align: center;
+    /* width: 1050px; */
+    margin: 0px auto;
+    font-family: 'Bree Serif', serif;
+    /* border: 2px solid black; */
+}
+
+#skill-title{
+    font-size: 45px;
+}
+
+#skill-text{
+    line-height: 23px;
+    padding: 20px 130px;
+}
+
+#skill-level{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px 50px;
+    padding: 23px 23px;
+    /* border: 2px solid black; */
+    text-align: left;
+}
+
+.skills-box{
+    /* border: 2px solid black; */
+}
+
+#box1::before{animation-name: box-1;}
+#box2::before{animation-name: box-2;}
+#box3::before{animation-name: box-3;}
+#box4::before{animation-name: box-4;}
+#box5::before{animation-name: box-5;}
+#box6::before{animation-name: box-6;}
+#box7::before{animation-name: box-7;}
+#box8::before{animation-name: box-8;}
+#box9::before{animation-name: box-9;}
+#box10::before{animation-name: box-10;}
+#box11::before{animation-name: box-11;}
+#box12::before{animation-name: box-12;}
+
+
+
+/* Connect Area */
+
+.connect{
+    display: grid;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 32px 260px;
+    height: 300px;
+    background: url(/img/section_bg_1.png) center center/cover;
+}
+
+
+.connect h2{
+    font-size: 52px;
+}
+#connect-area-btn{
+    margin: auto;
+}
+
+#connect-area-btn a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Clients Area */
+.clients{
+    display: grid;
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    /* width: 1100px; */
+    margin: 70px auto;
+    padding: 23px 50px;
+}
+
+.clients h2{
+    font-size: 43px;
+    margin: 23px;
+}
+.clients p{
+    margin: 23px;
+    padding: 0px 55px;
+}
+.client-pics{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 80px;
+    margin: 32px;
+    padding: 51px;
+}   
+    
+
+.client-pics img{
+    height: 100%;
+    width: 100%;
+}
+
+#footer{
+    font-family: 'Bree Serif', serif;
+    height: 30px;
+    background-color: rgb(92, 92, 92);
+    color: white;
+    padding: 13px;
+    text-align: center;
+}
+
+/* Utility Classes */
+
+.box{
+    background-color: #cfcece;
+    height: 17px;
+    position: relative;
+    /* width: 50%; */
+    margin: 2px 0px 0px 0px;
+    border-radius: 2px;
+    box-shadow: 3px 4px 4px grey;
+    /* animation: all 2s ease-in-out;
+    animation-fill-mode: forwards; */
+    
+}
+
+.box::before{
+    content: '';
+    background: var(--primary-color);
+    position: absolute;
+    height: 100%;
+    border-radius: 2px;
+    animation: all 2s ease-in-out;
+    animation-fill-mode: forwards; 
+    
+}
+
+.btn{
+    font-family: 'Bree Serif', serif;
+    font-size: 18px;
+    background-color: var(--primary-color);
+    width: 145px;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.btn:hover{
+    background-color: #2002c7;
+
+}
+
+
+@keyframes box-1 {
+    from{width: 0%;}
+    to{width: 100%;}
+}
+
+@keyframes box-2 {
+    from{width: 0%;}
+    to{width: 95%;}
+}
+
+@keyframes box-3 {
+    from{width: 0%;}
+    to{width: 90%;}
+}
+
+@keyframes box-4 {
+    from{width: 10%;}
+    to{width: 95%;}
+}
+
+@keyframes box-5 {
+    from{width: 0%;}
+    to{width: 75%;}
+}
+
+@keyframes box-6 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-7 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-8 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-9 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-10 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-11 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+@keyframes box-12 {
+    from{width: 0%;}
+    to{width: 80%;}
+}
+
+
+/* Social Icons */
+
+.fa {
+    padding: 20px;
+    margin: 12px;
+    font-size: 36px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-github {
+    background: #161616;
+    color: white;
+}
+
+
+/* Responsive */
+
+@media  only screen and (max-width:740px){
+    body{
+        background-color: red;
+        
+    }
+}
